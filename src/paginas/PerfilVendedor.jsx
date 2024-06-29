@@ -12,7 +12,7 @@ import axios from './axiosConfig.js';
 import './MenuDeInicio.css';
 import './EditarPerfil.css';
 import { useParams } from 'react-router-dom';
-import { formatearFechaLetras, obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from "../componentes/Metodos.js";
+import { formatearFechaLetras, obtenerLinkPerfil } from "../componentes/Metodos.js";
 import { Suspense, lazy } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './PerfilVendedor.css';
@@ -21,6 +21,7 @@ import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 const ImagenFotoPerfil = lazy(() => import('../componentes/lazy/ImagenFotoPerfilVendedor.jsx'));
 import { profileImagePathMod } from '../componentes/variablesGenerales.js';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
+import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 function PerfilDelVendedor(){
   const { username } = useParams();    
@@ -51,7 +52,7 @@ function PerfilDelVendedor(){
     //Funcion para obtener la foto de perfil
     const [profileImagePath, setProfileImagePath] = useState(null);
     useEffect(() => {
-      obtenerFotoPerfilGENERAL()
+      getObtenerFotoPerfilGeneral()
         .then(path => {
           setProfileImagePath(path);
         });

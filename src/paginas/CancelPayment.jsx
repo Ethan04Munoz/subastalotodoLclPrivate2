@@ -4,16 +4,17 @@ import './LinkRouter.css';
 import './formularioGen.css';
 import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
 import './EditarPerfil.css';
-import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
+import { obtenerLinkPerfil } from '../componentes/Metodos.js';
 import { lazy } from 'react';
 import Label from '../componentes/LblCentrado.jsx';
+import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 const ImagenEditarPerfil = lazy(() => import('../componentes/lazy/ImagenEditarPerfil.jsx'));
 
 function CancelPayment(){
     //Funcion para obtener la foto de perfil
     const [profileImagePath, setProfileImagePath] = useState(null);
         useEffect(() => {
-          obtenerFotoPerfilGENERAL()
+          getObtenerFotoPerfilGeneral()
             .then(path => {
               setProfileImagePath(path);
             });

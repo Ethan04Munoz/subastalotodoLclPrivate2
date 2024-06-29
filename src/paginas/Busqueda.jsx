@@ -9,7 +9,7 @@ import LblCentrado from '../componentes/LblCentrado.jsx';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import './MenuDeInicio.css';
-import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
+import { obtenerLinkPerfil } from '../componentes/Metodos.js';
 import axios from './axiosConfig.js';
 import {Link} from 'react-router-dom';
 import FiltrosComponenteBusqueda from '../componentes/Filtros.jsx';
@@ -20,6 +20,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import '../componentes/Slider.css'
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
+import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 function Busqueda(){
     const params = useParams();
@@ -85,7 +86,7 @@ function Busqueda(){
     const[linkPerfilPath, setlinkPerfilPath] = useState(null);
     useEffect(() => 
     {
-        obtenerFotoPerfilGENERAL()
+        getObtenerFotoPerfilGeneral()
             .then(path => {
                 setProfileImagePath(path);
             });

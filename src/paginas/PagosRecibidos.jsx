@@ -8,11 +8,12 @@ import { useNavigate } from 'react-router-dom';
 import './EditarPerfil.css';
 import axios from './axiosConfig.js';
 import Label from '../componentes/LblCentrado.jsx';
-import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
+import { obtenerLinkPerfil } from '../componentes/Metodos.js';
 import './formularioGen.css';
 import './PagosRecibidos.css';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
+import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 function PagosRecibidos(){
     const history = useNavigate();
@@ -40,7 +41,7 @@ function PagosRecibidos(){
     //Funcion para obtener la foto de perfil
     const [profileImagePath, setProfileImagePath] = useState(null);
     useEffect(() => {
-        obtenerFotoPerfilGENERAL()
+        getObtenerFotoPerfilGeneral()
         .then(path => {
             setProfileImagePath(path);
         });

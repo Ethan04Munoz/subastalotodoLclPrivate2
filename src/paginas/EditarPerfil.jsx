@@ -12,10 +12,11 @@ import Advertencias from '../componentes/Advertencias.jsx';
 import './EditarPerfil.css';
 import GhostBtn2 from '../componentes/GhostBtn2.jsx';
 import axios from './axiosConfig.js'
-import { sugerenciasArray, getOperatingSystem, obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
+import { sugerenciasArray, getOperatingSystem, obtenerLinkPerfil } from '../componentes/Metodos.js';
 import { Suspense, lazy } from 'react';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
+import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 const ImagenEditarPerfil = lazy(() => import('../componentes/lazy/ImagenEditarPerfil.jsx'));
 
 const EditarPerfil = (props) => 
@@ -93,7 +94,7 @@ const EditarPerfil = (props) =>
     //Funcion para obtener la foto de perfil
     const [profileImagePath, setProfileImagePath] = useState(null);
     useEffect(() => {
-      obtenerFotoPerfilGENERAL()
+      getObtenerFotoPerfilGeneral()
         .then(path => {
           setProfileImagePath(path);
         });

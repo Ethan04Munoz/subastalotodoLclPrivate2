@@ -6,7 +6,7 @@ import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
 import GhostBtn from '../componentes/GhostBtn.jsx';
 import axios from './axiosConfig.js';
 import { useParams, useNavigate } from 'react-router-dom';
-import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from "../componentes/Metodos.js";
+import { obtenerLinkPerfil } from "../componentes/Metodos.js";
 import './ProductoSeleccionado.css';
 import '../componentes/Slider.css';
 import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlaces.jsx';
@@ -20,6 +20,7 @@ import Advertencias from '../componentes/Advertencias.jsx';
 import './ChatModal.css';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
+import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 function CodigosFinalizacion(){
     const params = useParams();
@@ -49,7 +50,7 @@ function CodigosFinalizacion(){
     //Funcion para obtener la foto de perfil
     const [profileImagePath, setProfileImagePath] = useState(null);
     useEffect(() => {
-      obtenerFotoPerfilGENERAL()
+      getObtenerFotoPerfilGeneral()
         .then(path => {
           setProfileImagePath(path);
         });

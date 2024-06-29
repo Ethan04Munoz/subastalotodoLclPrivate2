@@ -8,7 +8,7 @@ import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
 import GhostBtn from '../componentes/GhostBtn.jsx';
 import axios from './axiosConfig.js';
 import { Link, useParams } from 'react-router-dom';
-import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from "../componentes/Metodos.js";
+import { obtenerLinkPerfil } from "../componentes/Metodos.js";
 import './ProductoSeleccionado.css';
 import { Suspense, lazy } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -25,6 +25,7 @@ import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
 import HeaderMods from '../componentes/HeaderMods.jsx';
 import SubHeader from '../componentes/SubHeader.jsx';
 import {profileImagePathMod} from '../componentes/variablesGenerales.js';
+import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 const ImagenVendedorProductoSeleccionado = lazy(() => import('../componentes/lazy/ImagenVendedorProductoSeleccionado.jsx'));
 
@@ -79,7 +80,7 @@ function ProductoSeleccionado(){
   //Funcion para obtener la foto de perfil
   const [profileImagePath, setProfileImagePath] = useState(null);
   useEffect(() => {
-      obtenerFotoPerfilGENERAL()
+      getObtenerFotoPerfilGeneral()
         .then(path => {
           setProfileImagePath(path);
         });

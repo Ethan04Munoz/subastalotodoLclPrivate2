@@ -9,9 +9,10 @@ import axios from './axiosConfig.js'
 import { useState, useEffect } from 'react'; 
 import { useNavigate  } from 'react-router-dom';
 import TextAreaR from '../componentes/TextAreaR.jsx';
-import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
+import { obtenerLinkPerfil } from '../componentes/Metodos.js';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
+import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 const ReportarProducto = () => {
   const {id} = useParams();
@@ -79,7 +80,7 @@ const ReportarProducto = () => {
     //Funcion para obtener la foto de perfil
     const [profileImagePath, setProfileImagePath] = useState(null);
     useEffect(() => {
-      obtenerFotoPerfilGENERAL()
+      getObtenerFotoPerfilGeneral()
         .then(path => {
           setProfileImagePath(path);
         });

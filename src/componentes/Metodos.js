@@ -181,23 +181,6 @@ export function getOperatingSystem() {
     //console.log("Horas minutos segundos: ", hours, minutes, seconds);
     return `${day}:${month}:${year}   ${hours}:${minutes}:${seconds}`;
   }
-  
-
-  
-  import axios from '../paginas/axiosConfig.js';
-  export const obtenerFotoPerfilGENERAL = async () => {
-    try {
-          const response = await axios.get("/obtenerFotoPerfilGENERAL");
-          console.log("Obteniendo foto de perfil: ", response);
-          //const enviarRuta = "https://fluent-radar-408018.uw.r.appspot.com/" + response.data;
-          const enviarRuta = response.data;
-          //const enviarRuta = direccionServer + response.data;
-          console.log("La ruta: ", enviarRuta)
-          return enviarRuta;
-      } catch (error) {
-          console.log(error);
-      }
-  };
 
   export const obtenerLinkPerfil = async () => {
     try {
@@ -290,4 +273,8 @@ export function generarNombreUsuario(){
   nombreDeUsuario = nombreDeUsuario + getRandomNumber() + getRandomNumber();
   console.log("Nombre de usuario: ", nombreDeUsuario);
   return nombreDeUsuario;
+}
+
+export function generarNumeroAleatorio(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }

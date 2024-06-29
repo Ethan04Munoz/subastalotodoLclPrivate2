@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import './EditarPerfil.css';
 import GhostBtn2 from '../componentes/GhostBtn2.jsx';
 import axios from './axiosConfig.js'
-import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
+import { obtenerLinkPerfil } from '../componentes/Metodos.js';
 import { lazy } from 'react';
 import Label from '../componentes/LblCentrado.jsx';
 const ImagenEditarPerfil = lazy(() => import('../componentes/lazy/ImagenEditarPerfil.jsx'));
@@ -20,6 +20,7 @@ import './Reviews.css';
 import { Rating } from 'react-simple-star-rating';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
+import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 function Reviews(){
     const history = useNavigate();
@@ -46,7 +47,7 @@ function Reviews(){
     //Funcion para obtener la foto de perfil
     const [profileImagePath, setProfileImagePath] = useState(null);
         useEffect(() => {
-          obtenerFotoPerfilGENERAL()
+          getObtenerFotoPerfilGeneral()
             .then(path => {
               setProfileImagePath(path);
             });

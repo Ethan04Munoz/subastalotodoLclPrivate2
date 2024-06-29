@@ -6,7 +6,7 @@ import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
 import GhostBtn from '../componentes/GhostBtn.jsx';
 import axios from './axiosConfig.js';
 import { useParams, useNavigate } from 'react-router-dom';
-import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil, formatearFecha } from "../componentes/Metodos.js";
+import { obtenerLinkPerfil, formatearFecha } from "../componentes/Metodos.js";
 import './ProductoSeleccionado.css';
 import '../componentes/Slider.css';
 import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlaces.jsx';
@@ -24,6 +24,7 @@ import HeaderMods from '../componentes/HeaderMods.jsx';
 import SubHeader from '../componentes/SubHeader.jsx';
 import {profileImagePathMod} from '../componentes/variablesGenerales.js';
 import { Suspense, lazy } from 'react';
+import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 const LazyImage = React.lazy(() => import('../componentes/lazy/LazyImage.jsx')); // Asume que tienes un componente LazyImage
 
 function Chat(){
@@ -70,7 +71,7 @@ function Chat(){
     //Funcion para obtener la foto de perfil
     const [profileImagePath, setProfileImagePath] = useState(null);
     useEffect(() => {
-      obtenerFotoPerfilGENERAL()
+      getObtenerFotoPerfilGeneral()
         .then(path => {
           setProfileImagePath(path);
         });

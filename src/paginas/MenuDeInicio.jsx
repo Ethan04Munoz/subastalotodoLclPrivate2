@@ -13,40 +13,32 @@ import axios from './axiosConfig.js';
 import SliderComponent from '../componentes/Slider.jsx';
 import SliderProductosMasQueridos from '../componentes/SliderProductosMasQueridos.jsx';
 import './MenuDeInicio.css';
-import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
+import { obtenerLinkPerfil } from '../componentes/Metodos.js';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import SliderTambienTePuedeInteresar from '../componentes/SliderTambienTePuedeInteresar.jsx';
+import { getObtenerFotoPerfilGeneral, getValidacionesTipoUsuario } from '../funcionesDB/get.js';
 
 const MenuDeInicio = (props) => 
 {
   const history = useNavigate();
   const [renderizar, setRenderizar] = useState("");
   useEffect(() => {
-    /*axios.get('/validaciones/TipoUsuario')
-    .then(response => {
-      console.log("Validacion: ", response)
-      if(response.data.tipoUsuario == 1){
+      let tipoUsuario = getValidacionesTipoUsuario();
+      if(tipoUsuario == 1){
         setRenderizar('Normal')
-      } else if (response.data.tipoUsuario == 2){
+      } else if (tipoUsuario == 2){
         history("/init");
-      } else if(response.data.tipoUsuario == 3){
+      } else if(tipoUsuario == 3){
         history('/editarperfilmod')
       } else{
         setRenderizar('NoEncontrada')
-      }*/
-    /*.catch(error => {
-      console.log(error.response);
-      if (error.response && error.response.status === 401) {
-        history('/login'); // Redirecciona al usuario a la página de inicio de sesión
       }
-    });*/
-    setRenderizar("Normal");
   }, []);
 
     //Funcion para obtener la foto de perfil
     const [profileImagePath, setProfileImagePath] = useState(null);
     useEffect(() => {
-      obtenerFotoPerfilGENERAL()
+      getObtenerFotoPerfilGeneral()
         .then(path => {
           setProfileImagePath(path);
         });
