@@ -22,7 +22,7 @@ const MenuDeInicio = (props) =>
   const history = useNavigate();
   const [renderizar, setRenderizar] = useState("");
   useEffect(() => {
-    axios.get('/validaciones/TipoUsuario')
+    /*axios.get('/validaciones/TipoUsuario')
     .then(response => {
       console.log("Validacion: ", response)
       if(response.data.tipoUsuario == 1){
@@ -33,14 +33,14 @@ const MenuDeInicio = (props) =>
         history('/editarperfilmod')
       } else{
         setRenderizar('NoEncontrada')
-      }
-    })
-    .catch(error => {
+      }*/
+    /*.catch(error => {
       console.log(error.response);
       if (error.response && error.response.status === 401) {
         history('/login'); // Redirecciona al usuario a la página de inicio de sesión
       }
-    });
+    });*/
+    setRenderizar("Normal");
   }, []);
 
     //Funcion para obtener la foto de perfil
@@ -88,7 +88,7 @@ const MenuDeInicio = (props) =>
         event.preventDefault();
         history("publicarproducto");
       }
-
+      console.log("Renderizar: ", renderizar)
       if(renderizar== "Normal"){
         return(
             <div className='menuDeInicio'>
