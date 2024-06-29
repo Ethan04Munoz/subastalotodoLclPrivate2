@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Slider.css';
 import Label from './LblCentrado.jsx';
+import { getTopTenVendedores } from '../funcionesDB/get.js';
 
 const NextArrow = ({ onClick }) => {
   return (
@@ -26,18 +27,12 @@ const SliderComponent = () => {
   const [vendedores, setVendedores] = useState([]);
 
   useEffect(() => {
-    const fetchVendedores = async () => {
-      try {
-        const response = await axios.get('/api/top_10_vendedores');
-        console.log("Slider que sirve : ", response.data);
-        setVendedores(response.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchVendedores();
+    setVendedores(getTopTenVendedores());
   }, []);
+
+  useEffect(() => {
+    console.log("Vendedores: ", vendedores);
+  }, [vendedores]);
 
   const settings = {
     infinite: true,
@@ -57,7 +52,7 @@ const SliderComponent = () => {
                 <a className='noTextDecoration' href={`/usuario/${resultado.username}`}>
                   <tr key={resultado.id} className='gridearRowsPerfilVendedor marginLeft10ProductosMasQueridos'> 
                     <td className='imgTablaPerfilVendedor1'>
-                      <img src={resultado.ruta_foto_perfil} className='imgTablaPerfilVendedor'/> 
+                      <img src={resultado.rutaFotoPerfil} className='imgTablaPerfilVendedor'/> 
                     </td>
                     <td className='imgTablaPerfilVendedor3 '>
                       <div>

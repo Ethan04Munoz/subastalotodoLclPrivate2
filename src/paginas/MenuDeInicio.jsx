@@ -94,7 +94,7 @@ const MenuDeInicio = (props) =>
                   tipoLbl="lblTitulo"
                   textoLbl="Productos más queridos"
                   />
-                  <SliderProductosMasQueridos/>
+                  {/*<SliderProductosMasQueridos/>*/}
                   <LblCentrado
                   id="losmejoresvendedores"
                   tipoLbl="lblTitulo"
@@ -106,7 +106,7 @@ const MenuDeInicio = (props) =>
                   tipoLbl="lblTitulo"
                   textoLbl="También te puede interesar"
                   />
-                  <SliderTambienTePuedeInteresar/>
+                  {/*<SliderTambienTePuedeInteresar/>*/}
                   <GhostBtn2 clase="ghostBtnSecundario" children="Vender" onClick={irAVender}/>
                 </div>      
             </div>

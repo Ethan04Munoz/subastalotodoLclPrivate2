@@ -3,7 +3,7 @@ import { generarNumeroAleatorio } from "../componentes/Metodos";
 export function getObtenerFotoPerfilGeneral(){
     //Obtener foto
     let valorNumerico = generarNumeroAleatorio(1, 5);
-    let rutaFoto = `../img/fotosPerfiles/user (${valorNumerico})`;
+    let rutaFoto = `img/fotosPerfiles/user (${valorNumerico}).jpg`;
     return rutaFoto;
 }
 
@@ -19,4 +19,16 @@ export function getValidacionesTipoUsuario(){
 
 export function getLinkPerfil(){
     return `/usuario/myusuario`;
+}
+
+export function getTopTenVendedores(){
+    const usuarios = [];
+    for (let id = 1; id <= 10; id++) {
+        usuarios.push({
+            id: id,
+            username: `usuario ${id}`,
+            rutaFotoPerfil: getObtenerFotoPerfilGeneral() /*"libro.png"*/
+        });
+    }
+    return usuarios;
 }
