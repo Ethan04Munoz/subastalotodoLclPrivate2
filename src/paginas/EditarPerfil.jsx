@@ -1,22 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react';
-import GhostBtn from '../componentes/componentes/GhostBtn.jsx';
-import InputPassword from '../componentes/componentes/InputPassword.jsx';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx';
-import HeaderConBarraEnlaces from '../componentes/componentes/HeaderConBarraEnlaces.jsx';
+import GhostBtn from '../componentes/GhostBtn.jsx';
+import InputPassword from '../componentes/InputPassword.jsx';
+import LblCentrado from '../componentes/LblCentrado.jsx';
+import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlaces.jsx';
 import './LinkRouter.css';
 import './formularioGen.css';
 import {Link} from 'react-router-dom';
-import SubHeaderNormalUser from '../componentes/componentes/SubHeaderNormalUser2.jsx';
+import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
 import { useNavigate } from 'react-router-dom';
-import Advertencias from '../componentes/componentes/Advertencias.jsx';
+import Advertencias from '../componentes/Advertencias.jsx';
 import './EditarPerfil.css';
-import GhostBtn2 from '../componentes/componentes/GhostBtn2.jsx';
+import GhostBtn2 from '../componentes/GhostBtn2.jsx';
 import axios from './axiosConfig.js'
 import { sugerenciasArray, getOperatingSystem, obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
 import { Suspense, lazy } from 'react';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
-const ImagenEditarPerfil = lazy(() => import('../componentes/componentes/lazy/ImagenEditarPerfil.jsx'));
+const ImagenEditarPerfil = lazy(() => import('../componentes/lazy/ImagenEditarPerfil.jsx'));
 
 const EditarPerfil = (props) => 
 {

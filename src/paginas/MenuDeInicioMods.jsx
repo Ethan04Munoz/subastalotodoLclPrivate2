@@ -1,9 +1,9 @@
 import React from 'react';
 import './AgregarNuevoModerador.css';
-import HeaderMods from '../componentes/componentes/HeaderMods.jsx';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx'
+import HeaderMods from '../componentes/HeaderMods.jsx';
+import LblCentrado from '../componentes/LblCentrado.jsx'
 import './formularioGen.css'; 
-import SubHeader from '../componentes/componentes/SubHeader.jsx';
+import SubHeader from '../componentes/SubHeader.jsx';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect} from 'react'; 

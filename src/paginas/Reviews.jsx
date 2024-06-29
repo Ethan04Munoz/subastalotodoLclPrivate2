@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import HeaderConBarraEnlaces from '../componentes/componentes/HeaderConBarraEnlaces.jsx';
+import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlaces.jsx';
 import './LinkRouter.css';
 import './formularioGen.css';
-import SubHeaderNormalUser from '../componentes/componentes/SubHeaderNormalUser2.jsx';
+import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
 import { useNavigate } from 'react-router-dom';
 import './EditarPerfil.css';
-import GhostBtn2 from '../componentes/componentes/GhostBtn2.jsx';
+import GhostBtn2 from '../componentes/GhostBtn2.jsx';
 import axios from './axiosConfig.js'
 import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
 import { lazy } from 'react';
-import Label from '../componentes/componentes/LblCentrado.jsx';
-const ImagenEditarPerfil = lazy(() => import('../componentes/componentes/lazy/ImagenEditarPerfil.jsx'));
+import Label from '../componentes/LblCentrado.jsx';
+const ImagenEditarPerfil = lazy(() => import('../componentes/lazy/ImagenEditarPerfil.jsx'));
 import './AgregarNuevoModerador.css';
 import './formularioGen.css';
 import './Modal-PopUp.css';

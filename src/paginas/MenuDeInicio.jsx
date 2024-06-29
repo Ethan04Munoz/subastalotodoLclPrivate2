@@ -1,21 +1,21 @@
 import React from 'react';
-import GhostBtn2 from '../componentes/componentes/GhostBtn2.jsx';
-import './componentes/SubHeader.css';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx';
+import GhostBtn2 from '../componentes/GhostBtn2.jsx';
+import '../componentes/SubHeader.css';
+import LblCentrado from '../componentes/LblCentrado.jsx';
 import './LinkRouter.css';
 import './formularioGen.css';
 import {Link} from 'react-router-dom';
 import { useState, useEffect} from 'react'; 
-import HeaderConBarraEnlaces from '../componentes/componentes/HeaderConBarraEnlacesFiltros.jsx';
+import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlacesFiltros.jsx';
 import { scrollTo } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
 import axios from './axiosConfig.js';
-import SliderComponent from '../componentes/componentes/Slider.jsx';
-import SliderProductosMasQueridos from '../componentes/componentes/SliderProductosMasQueridos.jsx';
+import SliderComponent from '../componentes/Slider.jsx';
+import SliderProductosMasQueridos from '../componentes/SliderProductosMasQueridos.jsx';
 import './MenuDeInicio.css';
 import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
-import SliderTambienTePuedeInteresar from '../componentes/componentes/SliderTambienTePuedeInteresar.jsx';
+import SliderTambienTePuedeInteresar from '../componentes/SliderTambienTePuedeInteresar.jsx';
 
 const MenuDeInicio = (props) => 
 {

@@ -1,15 +1,15 @@
 import React from 'react';
 import './AgregarNuevoModerador.css';
-import HeaderMods from '../componentes/componentes/HeaderMods.jsx';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx'
-import GhostBtn2 from '../componentes/componentes/GhostBtn2.jsx';
+import HeaderMods from '../componentes/HeaderMods.jsx';
+import LblCentrado from '../componentes/LblCentrado.jsx'
+import GhostBtn2 from '../componentes/GhostBtn2.jsx';
 import './formularioGen.css'; 
-import SubHeader from '../componentes/componentes/SubHeader.jsx';
+import SubHeader from '../componentes/SubHeader.jsx';
 import { useState, useEffect  } from 'react'; 
 import axios from './axiosConfig.js'
 import { profileImagePathMod} from '../componentes/variablesGenerales.js';
 import './ProductosReportados.css';
-import Label from '../componentes/componentes/LblCentrado.jsx';
+import Label from '../componentes/LblCentrado.jsx';
 import './Modal-PopUp.css';
 import './ImagenesManipuladas.css';
 import { useNavigate } from 'react-router-dom';

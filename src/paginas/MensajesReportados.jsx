@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from './axiosConfig.js';
-import GhostBtn2 from '../componentes/componentes/GhostBtn2.jsx';
-import HeaderMods from '../componentes/componentes/HeaderMods.jsx';
-import Label from '../componentes/componentes/LblCentrado.jsx';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx';
-import SubHeader from '../componentes/componentes/SubHeader.jsx';
+import GhostBtn2 from '../componentes/GhostBtn2.jsx';
+import HeaderMods from '../componentes/HeaderMods.jsx';
+import Label from '../componentes/LblCentrado.jsx';
+import LblCentrado from '../componentes/LblCentrado.jsx';
+import SubHeader from '../componentes/SubHeader.jsx';
 import { profileImagePathMod } from '../componentes/variablesGenerales.js';
 import './AgregarNuevoModerador.css';
 import './formularioGen.css';

@@ -1,14 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import GhostBtn from '../componentes/componentes/GhostBtn.jsx';
-import InputPassword from '../componentes/componentes/InputPassword.jsx';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx';
-import Header from '../componentes/componentes/Header.jsx';
+import GhostBtn from '../componentes/GhostBtn.jsx';
+import InputPassword from '../componentes/InputPassword.jsx';
+import LblCentrado from '../componentes/LblCentrado.jsx';
+import Header from '../componentes/Header.jsx';
 import './LinkRouter.css';
 import './formularioGen.css';
 import axios from './axiosConfig.js'
 import { useState } from 'react';
-import Advertencias from '../componentes/componentes/Advertencias.jsx';
+import Advertencias from '../componentes/Advertencias.jsx';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
 

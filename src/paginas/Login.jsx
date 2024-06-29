@@ -1,16 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import GhostBtn from '../componentes/componentes/GhostBtn.jsx';
-import InputText from '../componentes/componentes/InputText.jsx';
-import InputPassword from '../componentes/componentes/InputPassword.jsx';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx';
-import Header from '../componentes/componentes/Header.jsx';
+import GhostBtn from '../componentes/GhostBtn.jsx';
+import InputText from '../componentes/InputText.jsx';
+import InputPassword from '../componentes/InputPassword.jsx';
+import LblCentrado from '../componentes/LblCentrado.jsx';
+import Header from '../componentes/Header.jsx';
 import './LinkRouter.css';
 import './formularioGen.css';
 import { Link } from 'react-router-dom';
 import axios from './axiosConfig.js'
 import { useState } from 'react';
-import Advertencias from '../componentes/componentes/Advertencias.jsx';
+import Advertencias from '../componentes/Advertencias.jsx';
 import { generarNombreUsuario } from '../componentes/Metodos.js';
 
 const Login = (props) => {

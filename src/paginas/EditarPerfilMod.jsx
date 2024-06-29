@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import GhostBtn from '../componentes/componentes/GhostBtn.jsx';
-import InputPassword from '../componentes/componentes/InputPassword.jsx';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx';
-import SubHeader from '../componentes/componentes/SubHeader.jsx';
-import HeaderMods from '../componentes/componentes/HeaderMods.jsx';
+import GhostBtn from '../componentes/GhostBtn.jsx';
+import InputPassword from '../componentes/InputPassword.jsx';
+import LblCentrado from '../componentes/LblCentrado.jsx';
+import SubHeader from '../componentes/SubHeader.jsx';
+import HeaderMods from '../componentes/HeaderMods.jsx';
 import './LinkRouter.css';
 import './formularioGen.css';
 import { useNavigate } from 'react-router-dom';
-import Advertencias from '../componentes/componentes/Advertencias.jsx';
+import Advertencias from '../componentes/Advertencias.jsx';
 import './EditarPerfil.css'
 import axios from './axiosConfig.js'
 import { sugerenciasArray } from '../componentes/Metodos.js';

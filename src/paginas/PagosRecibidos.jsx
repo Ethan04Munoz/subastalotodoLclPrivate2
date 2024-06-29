@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import GhostBtn from '../componentes/componentes/GhostBtn.jsx';
-import HeaderConBarraEnlaces from '../componentes/componentes/HeaderConBarraEnlaces.jsx';
+import GhostBtn from '../componentes/GhostBtn.jsx';
+import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlaces.jsx';
 import './LinkRouter.css';
 import './formularioGen.css';
-import SubHeaderNormalUser from '../componentes/componentes/SubHeaderNormalUser2.jsx';
+import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
 import { useNavigate } from 'react-router-dom';
 import './EditarPerfil.css';
 import axios from './axiosConfig.js';
-import Label from '../componentes/componentes/LblCentrado.jsx';
+import Label from '../componentes/LblCentrado.jsx';
 import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
 import './formularioGen.css';
 import './PagosRecibidos.css';

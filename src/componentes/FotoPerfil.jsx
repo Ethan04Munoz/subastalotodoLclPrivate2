@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './FotoPerfil.css'
 import {Link} from 'react-router-dom';
-import './../LinkRouter.css';
+import '../paginas/LinkRouter.css';
 import axios from '../paginas/axiosConfig.js';
 import { useNavigate } from 'react-router-dom';
 import { Suspense, lazy } from 'react';

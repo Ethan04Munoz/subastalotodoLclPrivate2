@@ -1,13 +1,13 @@
 import React from 'react';
-import './componentes/SubHeader.css';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx';
-import HeaderMods from '../componentes/componentes/HeaderMods.jsx';
-import SubHeader from '../componentes/componentes/SubHeader.jsx';
+import '../componentes/SubHeader.css';
+import LblCentrado from '../componentes/LblCentrado.jsx';
+import HeaderMods from '../componentes/HeaderMods.jsx';
+import SubHeader from '../componentes/SubHeader.jsx';
 import './LinkRouter.css';
 import './formularioGen.css';
 import { useState, useEffect} from 'react'; 
-import HeaderConBarraEnlaces from '../componentes/componentes/HeaderConBarraEnlaces.jsx';
-import SubHeaderNormalUser from '../componentes/componentes/SubHeaderNormalUser2.jsx';
+import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlaces.jsx';
+import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
 import axios from './axiosConfig.js';
 import './MenuDeInicio.css';
 import './EditarPerfil.css';
@@ -16,9 +16,9 @@ import { formatearFechaLetras, obtenerFotoPerfilGENERAL, obtenerLinkPerfil } fro
 import { Suspense, lazy } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './PerfilVendedor.css';
-import GhostBtn from '../componentes/componentes/GhostBtn.jsx';
+import GhostBtn from '../componentes/GhostBtn.jsx';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
-const ImagenFotoPerfil = lazy(() => import('../componentes/componentes/lazy/ImagenFotoPerfilVendedor.jsx'));
+const ImagenFotoPerfil = lazy(() => import('../componentes/lazy/ImagenFotoPerfilVendedor.jsx'));
 import { profileImagePathMod } from '../componentes/variablesGenerales.js';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
 

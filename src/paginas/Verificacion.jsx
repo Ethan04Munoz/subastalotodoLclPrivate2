@@ -1,13 +1,13 @@
 import React from 'react';
-import GhostBtn from '../componentes/componentes/GhostBtn.jsx';
-import InputText from '../componentes/componentes/InputTextVaciable.jsx';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx';
-import Header from '../componentes/componentes/Header.jsx';
-import InputNum from '../componentes/componentes/InputNumVaciable.jsx';
+import GhostBtn from '../componentes/GhostBtn.jsx';
+import InputText from '../componentes/InputTextVaciable.jsx';
+import LblCentrado from '../componentes/LblCentrado.jsx';
+import Header from '../componentes/Header.jsx';
+import InputNum from '../componentes/InputNumVaciable.jsx';
 import { useState } from 'react'; 
 import { isNumber } from "../componentes/Metodos.js";
 import axios from './axiosConfig.js'
-import Advertencias from '../componentes/componentes/Advertencias.jsx';
+import Advertencias from '../componentes/Advertencias.jsx';
 import { useNavigate  } from 'react-router-dom';
 
 const Verificacion = (props) =>{

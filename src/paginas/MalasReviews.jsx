@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from './axiosConfig.js';
-import Label from '../componentes/componentes/LblCentrado.jsx';
-import HeaderMods from '../componentes/componentes/HeaderMods.jsx';
-import SubHeader from '../componentes/componentes/SubHeader.jsx';
+import Label from '../componentes/LblCentrado.jsx';
+import HeaderMods from '../componentes/HeaderMods.jsx';
+import SubHeader from '../componentes/SubHeader.jsx';
 import { profileImagePathMod } from '../componentes/variablesGenerales.js';
 import './MalasReviews.css';
 import { Rating } from 'react-simple-star-rating';

@@ -1,11 +1,11 @@
 import React from 'react';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx';
+import LblCentrado from '../componentes/LblCentrado.jsx';
 import './LinkRouter.css';
 import './formularioGen.css';
 import { useState, useEffect} from 'react'; 
-import HeaderConBarraEnlacesUsuario from '../componentes/componentes/HeaderConBarraEnlaces.jsx';
-import SubHeaderNormalUser from '../componentes/componentes/SubHeaderNormalUser2.jsx';
-import GhostBtn from '../componentes/componentes/GhostBtn.jsx';
+import HeaderConBarraEnlacesUsuario from '../componentes/HeaderConBarraEnlaces.jsx';
+import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
+import GhostBtn from '../componentes/GhostBtn.jsx';
 import axios from './axiosConfig.js';
 import { Link, useParams } from 'react-router-dom';
 import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from "../componentes/Metodos.js";
@@ -13,20 +13,20 @@ import './ProductoSeleccionado.css';
 import { Suspense, lazy } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getEstrellasImage } from '../componentes/Metodos.js';
-import '../componentes/componentes/Slider.css';
+import '../componentes/Slider.css';
 import Slider from 'react-slick';
-import Advertencias from '../componentes/componentes/Advertencias.jsx';
+import Advertencias from '../componentes/Advertencias.jsx';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import LazyImage from '../componentes/componentes/lazy/LazyImage.jsx';
-import NormalBtn from '../componentes/componentes/NormalBtn.jsx';
+import LazyImage from '../componentes/lazy/LazyImage.jsx';
+import NormalBtn from '../componentes/NormalBtn.jsx';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
-import HeaderMods from '../componentes/componentes/HeaderMods.jsx';
-import SubHeader from '../componentes/componentes/SubHeader.jsx';
+import HeaderMods from '../componentes/HeaderMods.jsx';
+import SubHeader from '../componentes/SubHeader.jsx';
 import {profileImagePathMod} from '../componentes/variablesGenerales.js';
 
-const ImagenVendedorProductoSeleccionado = lazy(() => import('../componentes/componentes/lazy/ImagenVendedorProductoSeleccionado.jsx'));
+const ImagenVendedorProductoSeleccionado = lazy(() => import('../componentes/lazy/ImagenVendedorProductoSeleccionado.jsx'));
 
 function ProductoSeleccionado(){
   const { id } = useParams();    

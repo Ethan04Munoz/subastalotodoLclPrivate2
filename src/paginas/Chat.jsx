@@ -2,29 +2,29 @@ import React from 'react';
 import './LinkRouter.css';
 import './formularioGen.css';
 import { useState, useEffect} from 'react'; 
-import SubHeaderNormalUser from '../componentes/componentes/SubHeaderNormalUser2.jsx';
-import GhostBtn from '../componentes/componentes/GhostBtn.jsx';
+import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
+import GhostBtn from '../componentes/GhostBtn.jsx';
 import axios from './axiosConfig.js';
 import { useParams, useNavigate } from 'react-router-dom';
 import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil, formatearFecha } from "../componentes/Metodos.js";
 import './ProductoSeleccionado.css';
-import '../componentes/componentes/Slider.css';
-import HeaderConBarraEnlaces from '../componentes/componentes/HeaderConBarraEnlaces.jsx';
+import '../componentes/Slider.css';
+import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlaces.jsx';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Chat.css';
-import InputText from '../componentes/componentes/InputTextVaciable.jsx';
-import Label from '../componentes/componentes/LblCentrado.jsx';
+import InputText from '../componentes/InputTextVaciable.jsx';
+import Label from '../componentes/LblCentrado.jsx';
 import './ChatModal.css';
-import CheckoutButton from '../componentes/componentes/CheckoutButton.jsx';
+import CheckoutButton from '../componentes/CheckoutButton.jsx';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
-import './componentes/InputText.css';
-import HeaderMods from '../componentes/componentes/HeaderMods.jsx';
-import SubHeader from '../componentes/componentes/SubHeader.jsx';
+import '../componentes/InputText.css';
+import HeaderMods from '../componentes/HeaderMods.jsx';
+import SubHeader from '../componentes/SubHeader.jsx';
 import {profileImagePathMod} from '../componentes/variablesGenerales.js';
 import { Suspense, lazy } from 'react';
-const LazyImage = React.lazy(() => import('../componentes/componentes/lazy/LazyImage.jsx')); // Asume que tienes un componente LazyImage
+const LazyImage = React.lazy(() => import('../componentes/lazy/LazyImage.jsx')); // Asume que tienes un componente LazyImage
 
 function Chat(){
     const params = useParams();

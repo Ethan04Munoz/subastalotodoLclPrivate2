@@ -6,7 +6,7 @@ import InputEmail from '../componentes/InputEmailVaciable.jsx';
 import InputText from '../componentes/InputTextVaciable.jsx';
 import GhostBtn from '../componentes/GhostBtn2.jsx';
 import './formularioGen.css'; 
-import SubHeader from '../componentes/componentes/SubHeader.jsx';
+import SubHeader from '../componentes/SubHeader.jsx';
 import { useState, useEffect  } from 'react'; 
 import Advertencias from '../componentes/Advertencias.jsx';
 import axios from './axiosConfig.js'

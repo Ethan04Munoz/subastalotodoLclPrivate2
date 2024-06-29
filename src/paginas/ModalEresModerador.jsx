@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import NormalBtn from '../componentes/componentes/NormalBtn';
+import NormalBtn from '../componentes/NormalBtn';
 import { useNavigate, useParams } from 'react-router-dom';
-import Label from '../componentes/componentes/LblCentrado';
+import Label from '../componentes/LblCentrado';
 import './Modal-PopUp.css';
 
 function ModalSesionCerrada(){

@@ -1,14 +1,14 @@
 import React from 'react';
-import GhostBtn2 from '../componentes/componentes/GhostBtn2.jsx';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx';
-import Advertencias from '../componentes/componentes/Advertencias.jsx';
-import HeaderConBarraEnlaces from '../componentes/componentes/HeaderConBarraEnlaces.jsx';
-import SubHeaderNormalUser from '../componentes/componentes/SubHeaderNormalUser.jsx';
+import GhostBtn2 from '../componentes/GhostBtn2.jsx';
+import LblCentrado from '../componentes/LblCentrado.jsx';
+import Advertencias from '../componentes/Advertencias.jsx';
+import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlaces.jsx';
+import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser.jsx';
 import {useParams} from 'react-router-dom';
 import axios from './axiosConfig.js'
 import { useState, useEffect } from 'react'; 
 import { useNavigate  } from 'react-router-dom';
-import TextAreaR from '../componentes/componentes/TextAreaR.jsx';
+import TextAreaR from '../componentes/TextAreaR.jsx';
 import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';

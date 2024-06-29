@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Slider.css';
 import Label from './LblCentrado.jsx';
-import ModalSesionCerrada from '../ModalSesiónCerrada.jsx';
+import ModalSesionCerrada from '../paginas/ModalSesiónCerrada.jsx';
 
 const NextArrow = ({ onClick }) => {
   return (

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import HeaderConBarraEnlaces from '../componentes/componentes/HeaderConBarraEnlaces.jsx';
+import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlaces.jsx';
 import './LinkRouter.css';
 import './formularioGen.css';
-import SubHeaderNormalUser from '../componentes/componentes/SubHeaderNormalUser2.jsx';
+import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
 import './EditarPerfil.css';
 import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
 import { lazy } from 'react';
-import Label from '../componentes/componentes/LblCentrado.jsx';
-const ImagenEditarPerfil = lazy(() => import('../componentes/componentes/lazy/ImagenEditarPerfil.jsx'));
+import Label from '../componentes/LblCentrado.jsx';
+const ImagenEditarPerfil = lazy(() => import('../componentes/lazy/ImagenEditarPerfil.jsx'));
 
 function CancelPayment(){
     //Funcion para obtener la foto de perfil

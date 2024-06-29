@@ -1,23 +1,23 @@
 import React from 'react';
-import './componentes/SubHeader.css';
+import '../componentes/SubHeader.css';
 import './LinkRouter.css';
 import './formularioGen.css';
 import { useState, useEffect} from 'react'; 
-import HeaderConBarraEnlaces from '../componentes/componentes/HeaderConBarraEnlaces.jsx';
-import SubHeaderNormalUser from '../componentes/componentes/SubHeaderNormalUser.jsx';
-import LblCentrado from '../componentes/componentes/LblCentrado.jsx';
+import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlaces.jsx';
+import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser.jsx';
+import LblCentrado from '../componentes/LblCentrado.jsx';
 import { useNavigate } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import './MenuDeInicio.css';
 import { obtenerFotoPerfilGENERAL, obtenerLinkPerfil } from '../componentes/Metodos.js';
 import axios from './axiosConfig.js';
 import {Link} from 'react-router-dom';
-import FiltrosComponenteBusqueda from '../componentes/componentes/Filtros.jsx';
+import FiltrosComponenteBusqueda from '../componentes/Filtros.jsx';
 import './Busqueda.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './componentes/Slider.css'
+import '../componentes/Slider.css'
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
 
