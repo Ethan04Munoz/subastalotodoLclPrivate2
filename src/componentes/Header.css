@@ -1,0 +1,112 @@
+.topMenu{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: var(--colorPrincipal);
+    color: var(--colorFuente1);
+    padding: 0;
+    min-height: 85px;
+    transition: all 0.1s;
+}
+
+.topMenu2{
+    display: flex;
+    align-items: center;
+    background-color: var(--colorPrincipal);
+    color: var(--colorFuente1);
+    padding: 0;
+    min-height: 85px;
+    transition: all 0.1s;
+}
+
+.topMenu:hover, .topMenu2:hover{
+    background: var(--colorPrincipalAlternativeHover)
+}
+
+.topMenuImg{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+.topMenuTitle{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.linkRouterHeader{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.supSupTopMenu{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(100, 1fr);
+    background-color: var(--colorPrincipal);
+}
+
+/*clases para el header con barra enlaces */
+.headerHijo1{
+    grid-column: 1 / span 30;
+}
+
+.headerHijo2{
+    grid-column: 31 / span 39;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.gridearHeaderHijo2{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 100%;
+    align-items: center;
+}
+
+.headerHijo3{
+    grid-column: 70 / span 25;
+}
+
+.headerHijo4{
+    grid-column: 95 / span 5;
+}
+
+.contenerLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contenerLinks .LinkFondoNaranja{
+    width: 100%;
+}
+
+/*clases para header mods */
+
+.modsHeaderHijo1{
+    grid-column: 1 / span 30;
+}
+
+.modsHeaderHijo2{
+    grid-column: 95 / span 5;
+}
+
+.LinkFondoNaranja i{
+    text-align: left;
+    color: var(--colorTerceario);
+    text-shadow: 1rem 0.5rem 1rem 1rem var(--colorTerceario);
+    font-size: 0.5rem;
+}
+
+.LinkFondoNaranja span{
+    padding-right: 0.2rem;
+    text-align: right;
+}
+
+
+.linkChatGrid{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    text-align: right;
+}

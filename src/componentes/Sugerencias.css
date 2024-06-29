@@ -1,0 +1,14 @@
+.sugerenciasSinClase{
+    display: none;
+}
+
+.sugerenciasClase {
+    margin-top: 0.7rem;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    background: var(--colorSugerencia);
+    color: var(--colorFuente3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

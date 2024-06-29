@@ -1,0 +1,26 @@
+.noTextDecoration{
+    text-decoration: none;
+}
+.noTextDecoration p{
+    font-weight: 600;
+    word-break: break-all;
+    
+}
+
+.gridearProductosManipulados{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.gridearProductoNoBoton{
+    background: var(--colorPrincipal);
+    margin-top: 1rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.gridearProductoNoBoton td img{
+    width: 100%;
+}
+

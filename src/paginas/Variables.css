@@ -1,0 +1,29 @@
+:root {
+    /*colores para fondos*/
+    --colorPrincipal: #161b22;
+    --colorPrincipalHover:#105fcf;
+    --colorPrincipalAlternativeHover: #1e252e;
+    --colorPrincipalFocus: #0046a9;
+    --colorSecundario: #010409;
+    --colorTerceario: #2170df;
+    --colorTransparencias: #2170dfad;
+    --transparencia: #ff00000e;
+    /*Colores para fondos de advertencias*/
+    --colorAdvertencia: #ff6f6f;
+    --colorSugerencia: #ffec6f;
+    --colorAdvertenciaExitosa:#6fff9a;
+    --colorSliderBolita: #34c560;
+    /*Colores de fuentes*/
+    --colorFuente1: #f3f8fc;
+    --colorFuente2: #105fcf;
+    --colorFuente3: #161b22;
+    --colorFuente4: #7e7e7e;
+    --colorFuente5: #a7a7a7;
+    /*Colores bordes y sombras*/
+    --bordeGris: #d4d4d457;
+    --bordeAzul: #2d7df0;
+    --bordeAzulSuave: #2d7ef069;
+    /*Extra*/
+    --deshabilitado: #979797;
+    --deshabilitado2: #42424230;
+}

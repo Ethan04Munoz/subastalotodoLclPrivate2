@@ -1,0 +1,27 @@
+.textAreaRezisable{
+    width: 100%;
+    margin-top: 0.6rem;
+    background: transparent;
+    border: 1px solid var(--bordeGris);
+    color: var(--colorFuente1);
+    border-radius: 0.15rem;
+}
+
+.textAreaRezisableError{
+    width: 100%;
+    margin-top: 0.6rem;
+    background: transparent;
+    border: 1px solid var(--colorAdvertencia);
+    color: var(--colorFuente1);
+    border-radius: 0.15rem;
+}
+
+.textAreaRezisable:focus{
+    border: 1px solid var(--bordeAzul);
+    outline: none;
+}
+
+.textAreaRezisableError:focus{
+    border: 1px solid var(--colorAdvertencia);
+    outline: none;
+}

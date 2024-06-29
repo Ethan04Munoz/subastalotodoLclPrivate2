@@ -1,0 +1,12 @@
+.Link {
+    color: var(--colorFuente3);
+    font-size: 0.7rem;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .Link:hover {
+    color: var(--colorFuente2);
+    transition: 0.3s;
+  }
+  

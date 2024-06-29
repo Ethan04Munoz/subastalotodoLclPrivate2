@@ -1,0 +1,68 @@
+.gridearTablaVentasNoConcretadas{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 1rem;
+}
+
+thead .gridearTablaVentasNoConcretadas{
+    text-align: center;
+}
+
+tbody .gridearTablaVentasNoConcretadas{
+    border-radius: 1rem;
+    background: var(--colorPrincipal);
+    margin-top: 2rem;
+}
+/*
+.gridearTablaVentasNoConcretadas .uno, .gridearTablaVentasNoConcretadas .dos{
+    display: flex;
+    align-items: center;
+}*/
+
+.textoBloque{
+  display: inline-block;
+  width: 100%;
+}
+
+.imgVentasNoConcretadas{
+    margin-left: 10%;
+    width: 80%;
+    max-height: 10rem;
+    border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
+}
+
+.tablaVentasNoConcretadas{
+    background: var(--colorSecundario);
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    width: 60%;
+    margin-left: 20%;
+    padding: 0.5rem;
+    color: var(--colorFuente1);
+}
+
+.tablaVentasNoConcretadas th{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.dividir80GridVentasNoConcretadas{
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+.perfilVentasNoConcretadas{
+    border-radius: 1.8rem 1.8rem 0.7rem 0.7rem;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+    text-align: center;
+}
+
+.perfilVentasNoConcretadas:hover{
+    background: var(--colorPrincipalHover);
+}
+
+.centrar50 {
+    width: 60%;
+    margin-left: 20%;
+}

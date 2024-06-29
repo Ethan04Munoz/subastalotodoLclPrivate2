@@ -1,0 +1,79 @@
+.tablaCentrarProductos80{
+    width: 60%;
+    margin-left: 20%;
+}
+
+
+.gridearEn3Columnas{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 3rem;
+}
+
+.imgTablaPerfilVendedor{
+    width: 100%;
+    max-height: 12rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.gridearRowsPerfilVendedor{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: 60% 13% 26%;
+    background: var(--colorPrincipalAlternativeHover);
+    transition: all 0.2s ease-out;
+    border-radius: 1rem;
+    max-width: 280px;
+    min-height: 25rem;
+    max-height: 28rem;
+}
+
+.gridearRowsPerfilVendedor:hover{
+    background: var(--colorPrincipal);
+    box-shadow: 0rem 0rem 1rem 0rem var(--bordeGris);
+}
+
+.noTextDecoration{
+    text-decoration: none;
+}
+
+.precioPerfilVendedor{
+    font-size: 2rem;
+    color: var(--colorAdvertenciaExitosa);
+    text-align: center;
+}
+
+.precioPerfilVendedor .letrapequeña{
+    font-size: 0.5rem;
+    color: var(--colorAdvertenciaExitosa);
+    text-align: center;
+}
+
+.nombreProductoPerfilVendedor{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.detallesProductoPerfilVendedor{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/**/
+
+
+.contenerSepacion2080PV{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.divLateralIzqPerfilVendedor{
+    margin-top: 5vh;
+    height: 75vh;
+}
+
+.divLateralIzqPerfilVendedor img{
+    width: 100%;
+    max-height: 40vh;
+}

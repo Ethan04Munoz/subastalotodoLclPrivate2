@@ -1,0 +1,94 @@
+.ghostBtn, .ghostBtnAlto, .ghostBtnAltoNoMax{
+    margin-top: 0.7rem;
+    padding: 5px;
+    width: 100%;
+    color: var(--colorFuente1);
+    transition: 0.3s;
+    transition: all 0.18s ease-in-out; 
+    background-size: 100% 200%;
+    background-position: 0 98%;
+    background-image: linear-gradient(to bottom, var(--colorPrincipalHover) 50%, var(--colorPrincipal) 50%); 
+    font-size: 1rem;
+    font-weight: 650;
+    border: solid 1px var(--bordeAzul);
+    border-radius: 5px;
+}
+
+.ghostBtnIM{
+    margin-top: 1rem;
+    padding: 5px;
+    width: 100%;
+    color: var(--colorFuente1);
+    transition: 0.4s;
+    transition: all 0.18s ease-in-out; 
+    background-size: 100% 205%;
+    background-position: 0 98%;
+    background-image: linear-gradient(to bottom, var(--colorPrincipalHover) 50%, var(--colorPrincipal) 50%); 
+    font-size: 1rem;
+    font-weight: 650;
+    border: 1px solid var(--bordeAzul);
+    border-radius: 0px 5px 5px 0px; 
+}
+
+.gridearProductosManipulados td .ghostBtnIM{
+    height: 100%;
+}
+
+.ghostBtnAlto{
+    height: 60%;
+    max-height: 83px;
+}
+
+.ghostBtnAltoNoMax{
+    height: 90%;
+}
+
+.ghostBtnSecundario{
+    margin-top: 0.7rem;
+    padding: 5px;
+    width: 100%;
+    color: var(--colorFuente1);
+    transition: 0.3s;
+    transition: all 0.18s ease-in-out; 
+    background-size: 100% 200%;
+    background-position: 0 98%;
+    background-image: linear-gradient(to bottom, var(--colorPrincipalHover) 50%, var(--colorSecundario) 50%); 
+    font-size: 1rem;
+    font-weight: 650;
+    border: solid 1px var(--bordeAzul);
+    border-radius: 5px;
+}
+
+.ghostBtnSecundario:hover{
+    background-position: 0 0%; 
+}
+
+.ghostBtn:hover, .ghostBtnAlto:hover, .ghostBtnIM:hover, .ghostBtnAltoNoMax:hover{
+    background-position: 0 0%; 
+}
+
+.ghostBtn:focus, .ghostBtnSecundario:focus, .ghostBtnAlto:focus, .ghostBtnIM:focus, .ghostBtnAltoNoMax:focus{
+    background: var(--colorPrincipalFocus);
+    border: 1px solid var(--bordeAzul);
+    transition: 0.3s;
+}
+
+.ghostBtn-Dis{
+    background: transparent;
+    border: 1px solid var(--deshabilitado2);
+    color: var(--deshabilitado);
+    margin-top: 0.7rem;
+    padding: 5px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.ghostBtn-Dis:focus{
+    background: transparent;
+    border: 1px solid var(--deshabilitado);
+    color: var(--deshabilitado);
+    margin-top: 0.7rem;
+    padding: 5px;
+    width: 100%;
+    font-size: 1rem;
+}

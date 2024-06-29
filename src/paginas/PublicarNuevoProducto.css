@@ -1,0 +1,48 @@
+.dividirFormContenedor{
+    display: flex;
+}
+.lateralIzqDividirFormContenedor{
+    width: 22%;
+}
+
+.lateralIzqDividirFormContenedor input{
+    width: 100%;
+}
+.lateralDerDividirFormContenedor{
+    width: 75%;
+    margin-left: 3%;
+}
+
+/**/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    padding: 0;
+    gap: 10px;
+  }
+  label {
+    text-align: center;
+  }
+
+  .contenedorSlider{
+    width: 20%;
+    text-align: center;
+  }
+  .contenedorSlider img{
+    max-width: 100%;
+  }
+  .imagenOOO{
+    max-width: 100%;
+    max-height: 11vw;
+  }
+
+.divCuadradoImagenes{
+  width: 100%;
+  height: 10vw;
+  color: var(--deshabilitado);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

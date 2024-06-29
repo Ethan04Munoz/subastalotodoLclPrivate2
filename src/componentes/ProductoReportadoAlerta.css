@@ -1,0 +1,23 @@
+.productoReportadoAlert {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(3, 1fr);
+    width: 60%;
+    height: 11rem;
+    margin-left: 20%;
+    background: #b91717;
+  }
+  
+  .productoReportadoAlert img {
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+  
+  .productoReportadoAlert button {
+    width: 80%;
+    margin-left: 20%;
+    grid-column: 3;
+    grid-row: 1 / 4;
+  }
+  

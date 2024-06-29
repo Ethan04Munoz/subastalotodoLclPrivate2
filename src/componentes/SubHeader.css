@@ -1,0 +1,41 @@
+.subHeaderContenedor {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 2rem;
+    width: 100%;
+    background: var(--colorPrincipal);
+  }
+
+.subHeaderContenedor Link{
+    text-decoration: none;
+}
+
+.subHeaderContenedor2{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: 3rem;
+  width: 100%;
+  margin-top: 0;
+  background: var(--colorPrincipal);
+}
+
+.subHeaderContenedor2 Link{
+  text-decoration: none;
+}
+
+.LinkFondoNaranja{
+  text-align: center;
+  text-decoration: none;
+  color: var(--colorFuente1);
+  font-weight: 600;
+  transition: all 0.1s ease;
+}
+
+.LinkFondoNaranja:hover{
+  font-size: large;
+  font-weight: 700;
+}

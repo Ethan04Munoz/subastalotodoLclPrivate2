@@ -1,0 +1,62 @@
+.input{
+    margin-top: 0rem;
+    width: 100%;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid var(--bordeGris);
+    border-radius: 0.15rem;
+    color: var(--colorFuente1);
+    outline: none;
+    font-size: 1rem;
+}
+
+.input:focus{
+    border: 1px solid var(--bordeAzul);
+    outline: none;
+}
+
+.inputAdvertencia{
+    margin-top: 0.7rem;
+    width: 100%;
+    padding: 5px;   
+    background: transparent;
+    border: 1px solid var(--colorAdvertencia);
+    border-radius: 0.15rem;
+    color: var(--colorFuente1); 
+    outline: none;
+    font-size: 1rem;
+}
+
+.inputAD{
+    width: 100%;
+    border-radius: 0.15rem;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+/*
+    inputAD significa inputAumentarDisminuir, es un div que contiene dos botones y un input, 
+    que se usa en la página de ofertar para aumentar y disminuir de uno en uno.
+*/
+
+.inputAD input{
+    background: transparent;
+    border: 1px solid var(--bordeGris);
+    padding: 5px;
+    color: var(--colorFuente1);
+    outline: none;
+    font-size: 1rem;
+}
+
+.inputAD button{
+    height: 100%;
+    background: transparent;
+    color: var(--colorFuente1);
+    border: 1px solid var(--bordeGris);
+    transition: 0.1s ease-in-out;
+    font-size: 1rem;
+}
+
+.inputAD button:hover{
+    background: var(--colorPrincipalHover);
+}

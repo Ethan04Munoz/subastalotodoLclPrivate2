@@ -1,0 +1,65 @@
+.gridearTablaNuevosChatsReportados{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+}
+
+thead .gridearTablaNuevosChatsReportados{
+    text-align: center;
+}
+
+tbody .gridearTablaNuevosChatsReportados{
+    border-radius: 1rem;
+    background: var(--colorPrincipal);
+    margin-top: 2rem;
+}
+
+.gridearTablaNuevosChatsReportados .uno{
+    display: flex;
+    align-items: center;
+}
+
+.gridearTablaNuevosChatsReportados .dos{
+    display: flex;
+    align-items: center;
+}
+
+.textoBloque{
+  display: inline-block;
+  width: 100%;
+}
+
+.gridearTablaNuevosChatsReportados .tres{
+    display: flex;
+    align-items: center;
+}
+
+.imgTablaProductosReportados{
+    width: 100%;
+}
+
+.tablaNuevosChatsReportados{
+    background: var(--colorSecundario);
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.tablaNuevosChatsReportados, .tablaNuevosChatsReportados .uno{
+    padding: 1.5rem;
+    color: var(--colorFuente1);
+}
+
+.tablaNuevosChatsReportados .dos, .tablaNuevosChatsReportados .tres{
+    padding: 0.5rem;
+}
+
+.tablaNuevosChatsReportados th{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.gridearTablaNuevosChatsReportados td .ghostBtnAlto{
+    max-height: none;
+    margin-top: 0;
+}

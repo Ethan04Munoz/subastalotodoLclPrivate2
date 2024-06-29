@@ -1,0 +1,38 @@
+.formRegistro{
+    background: var(--colorPrincipal);
+    margin-top: 1rem;
+    width: 50%;
+    margin-left: 25%;
+    box-shadow: 0 0.3rem 1rem var(--bordeGris);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formBarraIzq{
+    background: var(--colorPrincipal);
+    width: 100%;
+    height: 100%;
+    box-shadow: 0.3rem 0.3rem 1rem var(--bordeGris);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#imagenInput{
+    color: var(--colorFuente1);
+}
+
+.pCargando{
+    color: var(--colorFuente1);
+}
+
+.textoVerde{
+    text-decoration: none;
+    justify-content: center;
+    color: var(--colorAdvertenciaExitosa);
+}
+
+.divCargando{
+    width: 100%;
+    color: var(--colorFuente1);
+    text-align: center;
+}

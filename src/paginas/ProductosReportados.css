@@ -1,0 +1,49 @@
+.gridearTablaProductosReportados{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.gridearTablaProductosReportados .uno{
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: center;
+}
+
+.gridearTablaProductosReportados .dos{
+    grid-column: 3 / span 6;
+    display: flex;
+    align-items: center;
+}
+
+.textoBloque{
+  display: inline-block;
+  width: 100%;
+}
+
+.gridearTablaProductosReportados .tres{
+    grid-column: 9 / span 2;
+    display: flex;
+    align-items: center;
+}
+
+.imgTablaProductosReportados{
+    width: 100%;
+}
+
+.tablaProductosReportados{
+    background: var(--colorPrincipal);
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 1rem var(--bordeGris);
+    width: 50%;
+    margin-left: 25%;
+}
+
+.tablaProductosReportados, .tablaProductosReportados th, .tablaProductosReportados td{
+    padding: 1.5rem;
+    color: var(--colorFuente1);
+}
+
+.tablaProductosReportados th{
+    font-size: 1.2rem;
+}

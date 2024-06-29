@@ -1,0 +1,46 @@
+.lblCentrado{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--colorFuente1);
+}
+
+.lblIZquierda{
+    text-align: left;
+    font-size: 1rem;
+    color: var(--colorFuente1);
+}
+
+.lblSmallIzquierda{
+    text-align: left;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: var(--colorFuente1);
+}
+
+.lblSmall{
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--colorFuente1);
+}
+
+.lblTitulo{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 650;
+    color: var(--colorFuente1);
+}
+
+.lblTituloIzquierda{
+    text-align: left;
+    color: var(--colorFuente1);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.lblTituloColor{
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--colorFuente2);
+    text-shadow: 1px 0.2px 0.2px var(--colorFuente2);
+}

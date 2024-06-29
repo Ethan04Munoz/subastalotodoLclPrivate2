@@ -1,0 +1,92 @@
+.LinkIns, .LinkIns2 {
+    color: var(--colorFuente1);
+    margin-top: 1px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.08s ease-in-out;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.LinkIns2, .LinkIns3{
+    text-align: left;
+}
+
+.LinkIns3{
+    color: var(--colorFuente1);
+    margin-top: 1px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.08s ease-in-out;
+}
+
+.LinkIns3:hover{
+    font-weight: 650;
+    font-size: 1.1rem;
+}
+
+.Link2:hover {
+    font-size: large;
+    font-weight: 700;
+    }
+
+.LinkGrande{
+    color: var(--colorFuente1);
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.3s;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.LinkGrande:hover{
+    color: var(--colorPrincipalHover);
+    transition: 0.3s;
+}
+
+.LinkIns:hover {
+    transition: all 0.08s ease-in-out;
+    font-weight: 650;
+    font-size: 0.91rem;
+  }
+
+  
+.Link2{
+    font-size: 1rem;
+}
+
+/*Estos son los links de los enlaces en los cuadrados de advertencias*/
+.LinkVerificacion{
+    color: var(--colorFuente3);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.15s;
+}
+
+.LinkVerificacion:hover{
+    transition: all 0.15s;
+    color: var(--colorFuente1);
+    text-decoration: underline;
+}
+
+.linkFotoPerfil{
+    margin-top: 1px;
+    margin-left: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.08s ease-in-out;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    color: var(--colorFuente1);
+}
+
+.linkFotoPerfil:hover{
+    font-size: 0.75rem;
+    font-weight: 680;
+}

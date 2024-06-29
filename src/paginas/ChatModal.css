@@ -1,0 +1,33 @@
+.modalAdvChat {
+    background-color: #1e252e7c;
+    font-size: 0.8rem;
+    width: 20%;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: 0.2s all ease;
+  }
+  
+  .modalAdvChat p{
+    word-wrap: break-word;
+  }
+
+  .modalAdvChat .btnCerrarModal {
+    margin-top: 10px;
+    background: transparent;
+    border: transparent;
+    color: var(--colorFuente1);
+    transition: 0.2s all ease;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .modalAdvChat .btnCerrarModal:hover{
+    color: var(--colorAdvertencia);
+  }
+
+  .modalSuccessTexto{
+    text-align: center;
+    color: var(--colorAdvertenciaExitosa);
+    font-size: 1rem;
+    font-weight: 650;
+  }

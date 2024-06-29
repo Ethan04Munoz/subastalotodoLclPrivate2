@@ -1,0 +1,78 @@
+.arrow {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    font-size: 2rem;
+    background: transparent;
+    transition: 0.2s;
+    color: var(--colorFuente1); 
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .arrow:hover{
+    background: var(--colorTransparencias);
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+  
+  .next {
+    right: -20px;
+  }
+  
+  .prev {
+    left: -20px;
+  }
+/* Estilos para el contenedor del slider */
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Estilos para los elementos del slider */
+  .slider-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .sliderLimit{
+    background: var(--colorPrincipalAlternativeHover);
+    margin-left: 10%;
+    width: 14rem;
+    height: 18rem;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .sliderLimit .productosMasQueridosIMG{
+    width: 80%;
+    max-width: 10rem;
+    max-height: 10rem;
+  }
+
+  .slider-element .topVendedoresSliderIMG{
+    width: 80%;
+    margin-left: 10%;
+    max-width: 15rem;
+    max-height: 15rem;
+  }
+
+  .marginLeft10ProductosMasQueridos{
+    margin-left: 12%;
+  }
+
+  .noSliderIMG{ /*Clase que se usa para que la imagen tenga los mismos estilos que si es parte del slider*/
+    width: 80%;
+    margin-left: 10%;
+  }

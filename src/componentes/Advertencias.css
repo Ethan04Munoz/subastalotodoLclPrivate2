@@ -1,0 +1,27 @@
+@import '../Variables.css';
+
+.advertenciasSinClase{
+    display: none;
+}
+
+.advertenciasClase {
+    margin-top: 0.7rem;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    background: var(--colorAdvertencia);
+    color: var(--colorFuente3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advertenciasVerdes {
+    margin-top: 0.7rem;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    background: var(--colorAdvertenciaExitosa);
+    color: var(--colorFuente3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

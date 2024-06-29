@@ -1,0 +1,56 @@
+.gridearTablaMensajesReportados{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+thead .gridearTablaMensajesReportados{
+    text-align: center;
+}
+
+tbody .gridearTablaMensajesReportados{
+    border-radius: 1rem;
+    background: var(--colorPrincipal);
+    margin-top: 2rem;
+}
+
+.gridearTablaMensajesReportados .uno, .gridearTablaMensajesReportados .dos, .gridearTablaMensajesReportados .tres, .gridearTablaMensajesReportados .cuatro{
+    display: flex;
+    align-items: center;
+}
+
+.textoBloque{
+  display: inline-block;
+  width: 100%;
+}
+
+.imgTablaProductosReportados{
+    width: 100%;
+}
+
+.tablaMensajesReportados{
+    background: var(--colorSecundario);
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.tablaMensajesReportados, .tablaMensajesReportados .uno{
+    padding: 1.5rem;
+    color: var(--colorFuente1);
+}
+
+.tablaMensajesReportados .dos, .tablaMensajesReportados .tres, .tablaMensajesReportados .cuatro{
+    padding: 1.5rem;
+}
+
+.tablaMensajesReportados th{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.gridearTablaMensajesReportados td .ghostBtnAlto{
+    max-height: 6rem;
+    min-height: 5rem;
+    margin-top: 0;
+}

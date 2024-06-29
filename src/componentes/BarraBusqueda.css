@@ -1,0 +1,39 @@
+@import '../Variables.css';
+
+/**/
+.searchContainer{
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  background: var(--colorPrincipal);
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+.inputEnviarBarra{
+  margin-top: 0;
+  padding: 5px;
+  color: var(--colorFuente1);
+  background: transparent;
+  border: 1px solid var(--bordeGris);
+  outline: none;
+  font-size: 1rem;
+}
+
+.inputEnviarBarra:focus{
+  border: 1px solid var(--bordeAzul);
+}
+
+.btnEnviarBarra{
+  color: var(--colorFuente1);
+  padding: 5px;
+  border: 1px solid var(--bordeGris);
+  transition: 0.2s;
+  background: var(--colorPrincipal);
+}
+
+.btnEnviarBarra:hover{
+  border: 1px solid var(--colorPrincipalHover);
+  background: var(--colorPrincipalHover);
+}
+

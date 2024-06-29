@@ -1,0 +1,135 @@
+.filtrosComponenteBusqueda{
+    width: 100%;
+    padding: 1rem;
+    background: var(--colorPrincipal);
+    border-radius: 0.5rem;
+}
+
+.filtrosComponenteBusquedaEnBarra{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 17% 17% 26% 20% 20%;
+    grid-template-rows: repeat(2, 1fr)
+}
+
+.filtrosComponenteBusquedaEnBarra .alignCenterFCBB{
+    align-items: center;
+}
+
+.filtrosComponenteBusquedaEnBarra .ghostBtn{
+    margin: 0;
+    height: 90%;
+}
+
+.filtrosB {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    padding: 0.8rem;
+}
+
+.filtrosB p{
+    grid-row: 2;
+}
+/*
+.filtrosB input{
+    width: initial;
+    background: #ff22ff;
+    border: 1px solid var(--bordeGris);
+    border-radius: 0.15rem;
+    color: var(--colorFuente1);
+    outline: none;
+    font-size: 1rem;
+}*/
+
+.gridTiempoInputs{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 40% 30%;
+    align-items: center;
+}
+
+.filtrosComponenteBusquedaEnBarra .filtrosB1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.filtrosComponenteBusquedaEnBarra .filtrosB2{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.filtrosComponenteBusquedaEnBarra .filtrosB3{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.filtrosComponenteBusquedaEnBarra .filtrosB4{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.filtrosComponenteBusquedaEnBarra .filtrosB5{
+    grid-column: 3;
+    grid-row: 1;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 0.7rem 0.0rem 0.7rem 0.0rem;
+    gap: 8px;
+}
+
+.filtrosB5 .tiempoRestante{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.filtrosB5 .parrafoLabel1{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.filtrosB5 .parrafoLabel2{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.filtrosComponenteBusquedaEnBarra .filtrosB6{
+    grid-column: 3;
+    grid-row: 2 ;
+}
+
+.filtrosComponenteBusquedaEnBarra .filtrosB7{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.filtrosComponenteBusquedaEnBarra .filtrosB8{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.filtrosB8 .instant-sales-container{
+    align-items: center;
+    margin-top: 0;
+}
+
+.filtrosComponenteBusquedaEnBarra .filtrosB910{
+    grid-column: 5;
+    grid-row: 1 / span 2;
+}
+
+.textoLblFiltrosBarra{
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0;
+}
+
+.containerFiltros{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48.8% 48.8%;
+    padding: 0;
+    gap: 10px;
+    text-align: center;
+}

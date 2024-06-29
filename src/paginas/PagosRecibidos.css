@@ -1,0 +1,33 @@
+.gridearTablaPagosRecibidos{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 1rem;
+    word-wrap: break-word;
+}
+
+tbody .gridearTablaPagosRecibidos{
+    border-radius: 1rem;
+    background: var(--colorPrincipal);
+    margin-top: 2rem;
+}
+
+.imgPagosRecibidos{
+    width: 90%;
+    max-height: 10rem;
+    border-radius: 1.0rem 1.0rem 1.0rem 1.0rem;
+}
+
+.tablaPagosRecibidos{
+    background: var(--colorSecundario);
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    width: 60%;
+    margin-left: 20%;
+    padding: 0.5rem;
+    color: var(--colorFuente1);
+}
+
+.tablaPagosRecibidos th{
+    font-size: 1.2rem;
+    text-align: center;
+}

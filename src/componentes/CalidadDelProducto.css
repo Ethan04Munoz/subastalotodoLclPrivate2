@@ -1,0 +1,22 @@
+.selectListaDesp{
+    width: 100%;
+    background: transparent;
+    padding: 5px;
+    border: 1px solid var(--bordeGris);
+    border-radius: 0.15rem;
+    color: var(--colorFuente1);
+    background: var(--colorPrincipal);
+}
+
+.selectListaDesplegableChica {
+    background: transparent;
+    padding: 6.5px;
+    border: 1px solid var(--bordeGris);
+    color: var(--colorFuente1);
+    background: var(--colorPrincipal);
+    outline: none;  
+}
+
+.selectListaDesp:focus, .selectListaDesplegableChica:focus {
+    border: 1px solid var(--bordeAzul);
+}

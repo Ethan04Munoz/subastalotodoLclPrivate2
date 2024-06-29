@@ -1,0 +1,61 @@
+  .instant-sales-container {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--colorSecundario);
+    box-shadow: 0 0 2px var(--colorAdvertencia);
+    transition: 0.4s;
+    width: 100%;  /* Ajustado al 100% del contenedor */
+    height: 100%;  /* Ajustado al 100% del contenedor */
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 75%;  /* Cambiado a porcentaje */
+    width: 30%;  /* Cambiado a porcentaje */
+    left: 5%;
+    bottom: 12.5%;
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--colorSliderBolita);
+    box-shadow: 0 0 1px var(--colorAdvertenciaExitosa);
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(200%);  /* Cambiado a porcentaje */
+  }
+    
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

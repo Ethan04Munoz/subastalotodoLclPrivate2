@@ -1,0 +1,21 @@
+.contenerSepacion2Divs{
+    display: flex;
+}
+
+.divLateralIzqEditarPerfil{
+    margin-top: 5vh;
+    height: 70vh;
+    width: 18%;
+}
+.divLateralIzqEditarPerfil img{
+    width: 100%;
+    max-height: 40vh;
+}
+
+.divLateralDerEditarPerfil{
+    width: 82%;
+}
+
+.bajarFormEditarPerfil{
+    margin-top: 5vh;
+}

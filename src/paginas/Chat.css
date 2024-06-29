@@ -1,0 +1,181 @@
+.recuadroChat{
+    margin-top: 1rem;
+    height: 80vh;
+    width: 80%;
+    margin-left: 10%;
+    background: var(--colorPrincipal);
+    color: var(--colorFuente1);
+    border: 1px solid var(--bordeGris);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 0;
+}
+
+.contenedorChats{
+    border: 1px solid var(--bordeGris);
+    overflow-y: auto;
+}
+
+.contenedorConversacion{
+    display: grid;
+    grid-template-rows: 10% 82% 8%;
+}
+
+.infoContacto{
+    border: 1px solid var(--bordeGris);
+    background: var(--colorPrincipalAlternativeHover);
+}
+
+.conversacion{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.conversacion .modalAdv{
+    padding: 1rem;
+}
+
+.conversacion .modalAdv .btnCerrarModal{
+    padding: 0.5rem;
+}
+
+.contenedorConversacion .input{
+    padding: 0;
+    padding-left: 5px;
+}
+
+.palomitaEnviar{
+    background: var(--colorPrincipal);
+    border: 1px solid var(--bordeGris);
+    color: var(--colorFuente1);
+    transition: 0.2s ease-out;
+}
+
+.palomitaEnviar:hover{
+    background: var(--colorPrincipalHover);
+}
+
+.enviarMensajes{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.mensajeDefault{
+    text-align: center;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+}
+
+.mensaje-derecha, .mensaje-izquierda {
+    word-wrap: break-word;
+    position: relative;
+    padding: 1.2rem;
+    min-width: 15rem;
+}
+
+.mensaje-derecha {
+    margin-top: 0.5rem;
+    border-radius: 0.5rem 1.0rem 0 1.0rem;
+    margin-left: auto;
+    max-width: 35%;
+    text-align: right;
+    background:  var(--colorPrincipalHover);
+    /* Aquí otros estilos para el mensaje propio */
+  }
+  
+  .mensaje-izquierda {
+    text-align: left;
+    margin-top: 0.5rem;
+    border-radius: 1.0rem 0.5rem 1.5rem 0rem;
+    max-width: 35%;
+    background:  var(--colorPrincipalAlternativeHover);
+    /* Aquí otros estilos para el mensaje del otro usuario */
+  }
+  
+
+  .chatEnContenedor{
+    padding: 1rem;
+    width: 100%;
+    background:  var(--colorPrincipalAlternativeHover);
+    border-bottom: 1px solid var(--bordeGris);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    transition: 0.2s ease-out;
+  }
+
+  .chatEnContenedor i {
+    text-align: center;
+  }
+
+  .chatEnContenedorEnlace{
+    text-decoration: none;
+  }
+
+  .enlaceBlancoSinDecoracion{
+    text-decoration: none;
+    color: var(--colorFuente1);
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.5rem;
+    transition: 0.3s;
+  }
+
+  .enlaceBlancoSinDecoracion:hover{
+    text-decoration: underline;
+    color: var(--colorAdvertenciaExitosa);
+  }
+
+  .chatEnContenedor:hover{
+    background: var(--colorPrincipalHover);
+  }
+
+  .chatEnContenedor img{
+    width: 100%;
+  }
+
+  .nombreOtroMiembroChat{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .infoContacto {
+    display: grid;
+    grid-template-columns: 5% 95%; /*Aqui*/
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+  }
+
+.infoContacto img {
+    width: 100%;
+    max-height: 3rem;
+}
+
+.textBold{
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fecha-mensaje {
+  font-size: 0.7rem; /* Tamaño pequeño */
+  position: absolute;
+  bottom: 5px;
+}
+
+.mensaje-izquierda .fecha-mensaje{
+  color: var(--colorFuente4);
+  right: 1rem;
+}
+
+.mensaje-derecha .fecha-mensaje{
+  color: var(--colorFuente5);
+  left: 1rem
+}

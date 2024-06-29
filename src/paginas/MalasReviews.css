@@ -1,0 +1,70 @@
+.gridearTablaMalasReviews{
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    padding: 1rem;
+}
+/*
+thead .gridearTablaMalasReviews{
+    text-align: center;
+}*/
+
+tbody .gridearTablaMalasReviews{
+    border-radius: 1rem;
+    background: var(--colorPrincipal);
+    margin-top: 2rem;
+}
+/*
+.gridearTablaMalasReviews .uno, .gridearTablaMalasReviews .dos{
+    display: flex;
+    align-items: center;
+}
+*/
+
+.imgTablaMalasReviews{
+    margin-left: 10%;
+    width: 80%;
+    max-height: 10rem;
+    border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
+}
+
+.tablaMalasReviews{
+    background: var(--colorSecundario);
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    width: 60%;
+    margin-left: 20%;
+    padding: 0.5rem;
+    color: var(--colorFuente1);
+}
+
+/*
+.tablaMensajesReportados .dos, .tablaMensajesReportados .tres, .tablaMensajesReportados .cuatro{
+    padding: 1.5rem;
+}*/
+
+.tablaMalasReviews th{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.dividir50ElGrideoMalasReviews{
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+.perfilMalasReviews{
+    border-radius: 1.8rem 1.8rem 0.7rem 0.7rem;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+    text-align: center;
+    background: var(--colorPrincipal);
+}
+
+.perfilMalasReviews:hover{
+    background: var(--colorPrincipalHover);
+}
+
+.centrar50 {
+    width: 60%;
+    margin-left: 20%;
+}

@@ -1,0 +1,66 @@
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content, .modalAdv {
+    background-color: var(--colorPrincipalAlternativeHover);
+    width: 40%;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: 0.2s all ease;
+  }
+  
+  .modal-content h2, .modalAdv h2 {
+    margin-top: 0;
+    color: var(--colorFuente1);
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .modal-content .btnCerrarModal{
+    margin-top: 10px;
+    background: transparent;
+    border: transparent;
+    color: var(--colorFuente1);
+    transition: 0.2s all ease;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+
+  .aLaDerechaConGrid{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+  }
+
+  .aLaDerechaConGrid .btnCerrarModal{
+    grid-column: 19/ span 2;
+  }
+
+  .modalAdv .btnCerrarModal {
+    margin-top: 10px;
+    background: transparent;
+    border: transparent;
+    color: var(--colorFuente1);
+    transition: 0.2s all ease;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .modal-content .btnCerrarModal:hover {
+    color: var(--colorAdvertencia);
+  }
+
+  .modalAdv .btnCerrarModal:hover{
+    color: var(--colorAdvertencia);
+  }

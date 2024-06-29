@@ -1,0 +1,18 @@
+.normalBtn{
+    margin-top: 0.7rem;
+    font-weight: 600;
+    padding: 5px;
+    width: 100%;
+    background: var(--colorTerceario);
+    border: 1px solid var(--bordeAzul);
+    color: var(--colorFuente1);
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.normalBtn:hover{
+    background: var(--colorPrincipalHover);
+    border: 1px solid var(--colorPrincipalHover);;
+    transition: 0.3s;
+    border-radius: 35px;
+}
