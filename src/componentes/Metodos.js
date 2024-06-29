@@ -182,16 +182,6 @@ export function getOperatingSystem() {
     return `${day}:${month}:${year}   ${hours}:${minutes}:${seconds}`;
   }
 
-  export const obtenerLinkPerfil = async () => {
-    try {
-        const response = await axios.get("/obtenerLinkPerfil");
-        console.log("Link al perfil: ", response);
-        return response.data;
-    } catch (error) {
-        console.log(error);
-    }
-  }
-
 import {  mediaEstrella, 
     unaEstrella, 
     unaYMediaEstrella, 

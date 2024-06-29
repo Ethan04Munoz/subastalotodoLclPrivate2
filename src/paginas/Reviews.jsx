@@ -6,8 +6,7 @@ import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
 import { useNavigate } from 'react-router-dom';
 import './EditarPerfil.css';
 import GhostBtn2 from '../componentes/GhostBtn2.jsx';
-import axios from './axiosConfig.js'
-import { obtenerLinkPerfil } from '../componentes/Metodos.js';
+import axios from './axiosConfig.js';
 import { lazy } from 'react';
 import Label from '../componentes/LblCentrado.jsx';
 const ImagenEditarPerfil = lazy(() => import('../componentes/lazy/ImagenEditarPerfil.jsx'));
@@ -20,7 +19,7 @@ import './Reviews.css';
 import { Rating } from 'react-simple-star-rating';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
-import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
+import { getLinkPerfil, getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 function Reviews(){
     const history = useNavigate();
@@ -55,7 +54,7 @@ function Reviews(){
     
     const[linkPerfilPath, setlinkPerfilPath] = useState(null);
         useEffect(() => {
-          obtenerLinkPerfil()
+          getLinkPerfil()
             .then(path => {
               setlinkPerfilPath(path);
             });

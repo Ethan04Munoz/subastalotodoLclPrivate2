@@ -7,32 +7,27 @@ import SubHeader from '../componentes/SubHeader.jsx';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect} from 'react'; 
-import axios from './axiosConfig.js';
 import {profileImagePathMod} from '../componentes/variablesGenerales.js';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
+import { getValidacionesTipoUsuario } from '../funcionesDB/get.js';
 
 function MenuDeInicioMods(props){
     const history = useNavigate();
     const [renderizar, setRenderizar] = useState("");
     useEffect(() => {
-        axios.get('/validaciones/TipoUsuario')
-          .then(response => {
-            console.log("Validacion: ", response)
-            if(response.data.tipoUsuario == 2){
-                setRenderizar('Mod')
-            }else if(response.data.tipoUsuario == 3){
-                history('/editarperfilmod')
-            }else{
-                setRenderizar('NoEncontrada')
-            }
-          })
-          .catch(error => {
-            console.log(error.response);
-            if (error.response && error.response.status === 401) {
-                history('/login'); // Redirecciona al usuario a la página de inicio de sesión
-            }
-          });
+        let tipoUsuario = getValidacionesTipoUsuario();
+        if(tipoUsuario == 1){
+          setRenderizar('Normal')
+        } else if (tipoUsuario == "Mod"){
+          setRenderizar(tipoUsuario);
+        } else if(tipoUsuario == "ModSinVerificar"){
+          history('/editarperfilmod');
+        } else{
+          setRenderizar('NoEncontrada')
+        }
     }, []);
+
+    console.log("Renderizar: ", renderizar)
 
     if(renderizar=="Mod"){
         return (

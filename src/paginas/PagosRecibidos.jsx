@@ -8,12 +8,11 @@ import { useNavigate } from 'react-router-dom';
 import './EditarPerfil.css';
 import axios from './axiosConfig.js';
 import Label from '../componentes/LblCentrado.jsx';
-import { obtenerLinkPerfil } from '../componentes/Metodos.js';
 import './formularioGen.css';
 import './PagosRecibidos.css';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
-import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
+import { getLinkPerfil, getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 function PagosRecibidos(){
     const history = useNavigate();
@@ -50,7 +49,7 @@ function PagosRecibidos(){
     const[linkPerfilPath, setlinkPerfilPath] = useState(null);
     useEffect(() => {
         console.log("Le estoy hablandoo wey");
-        obtenerLinkPerfil()
+        getLinkPerfil()
         .then(path => {
             setlinkPerfilPath(path);
         });

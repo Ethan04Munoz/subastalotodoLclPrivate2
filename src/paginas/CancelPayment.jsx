@@ -4,10 +4,9 @@ import './LinkRouter.css';
 import './formularioGen.css';
 import SubHeaderNormalUser from '../componentes/SubHeaderNormalUser2.jsx';
 import './EditarPerfil.css';
-import { obtenerLinkPerfil } from '../componentes/Metodos.js';
 import { lazy } from 'react';
 import Label from '../componentes/LblCentrado.jsx';
-import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
+import { getLinkPerfil, getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 const ImagenEditarPerfil = lazy(() => import('../componentes/lazy/ImagenEditarPerfil.jsx'));
 
 function CancelPayment(){
@@ -23,7 +22,7 @@ function CancelPayment(){
     const[linkPerfilPath, setlinkPerfilPath] = useState(null);
         useEffect(() => {
           console.log("Le estoy hablandoo wey");
-          obtenerLinkPerfil()
+          getLinkPerfil()
             .then(path => {
               setlinkPerfilPath(path);
             });

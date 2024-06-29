@@ -9,5 +9,14 @@ export function getObtenerFotoPerfilGeneral(){
 
 export function getValidacionesTipoUsuario(){
     //Esta funcion es para mockear el obtener un tipo de usuario (1 = normal, 2 moderador, 3 moderador sin verificar)
-    return 1;
+    //Ahora retornará directamente la string para más fácil
+    //Normal
+    //Mod
+    //ModSinVerificar
+    //NoEncontrada
+    return "Normal";
+}
+
+export function getLinkPerfil(){
+    return `/usuario/myusuario`;
 }

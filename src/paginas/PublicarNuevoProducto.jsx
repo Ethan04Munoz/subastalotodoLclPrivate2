@@ -20,12 +20,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useNavigate, useParams } from 'react-router-dom';
-import { obtenerLinkPerfil } from '../componentes/Metodos.js';
 import { Link } from 'react-router-dom';
 import smartcrop from 'smartcrop';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
-import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
+import { getLinkPerfil, getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 const PublicarNuevoProducto = () => {  
     const { id } = useParams();
@@ -97,7 +96,7 @@ const PublicarNuevoProducto = () => {
 
     const[linkPerfilPath, setlinkPerfilPath] = useState(null);
     useEffect(() => {
-      obtenerLinkPerfil()
+      getLinkPerfil()
         .then(path => {
           setlinkPerfilPath(path);
         });

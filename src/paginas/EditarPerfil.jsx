@@ -12,11 +12,11 @@ import Advertencias from '../componentes/Advertencias.jsx';
 import './EditarPerfil.css';
 import GhostBtn2 from '../componentes/GhostBtn2.jsx';
 import axios from './axiosConfig.js'
-import { sugerenciasArray, getOperatingSystem, obtenerLinkPerfil } from '../componentes/Metodos.js';
+import { sugerenciasArray, getOperatingSystem } from '../componentes/Metodos.js';
 import { Suspense, lazy } from 'react';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
-import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
+import { getLinkPerfil, getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 const ImagenEditarPerfil = lazy(() => import('../componentes/lazy/ImagenEditarPerfil.jsx'));
 
 const EditarPerfil = (props) => 
@@ -103,7 +103,7 @@ const EditarPerfil = (props) =>
     const[linkPerfilPath, setlinkPerfilPath] = useState(null);
     useEffect(() => {
       console.log("Le estoy hablandoo wey");
-      obtenerLinkPerfil()
+      getLinkPerfil()
         .then(path => {
           setlinkPerfilPath(path);
         });

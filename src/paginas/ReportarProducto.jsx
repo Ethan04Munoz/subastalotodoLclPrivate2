@@ -9,10 +9,9 @@ import axios from './axiosConfig.js'
 import { useState, useEffect } from 'react'; 
 import { useNavigate  } from 'react-router-dom';
 import TextAreaR from '../componentes/TextAreaR.jsx';
-import { obtenerLinkPerfil } from '../componentes/Metodos.js';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
-import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
+import { getLinkPerfil, getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 const ReportarProducto = () => {
   const {id} = useParams();
@@ -89,7 +88,7 @@ const ReportarProducto = () => {
 
     const[linkPerfilPath, setlinkPerfilPath] = useState(null);
     useEffect(() => {
-      obtenerLinkPerfil()
+      getLinkPerfil()
         .then(path => {
           setlinkPerfilPath(path);
         });

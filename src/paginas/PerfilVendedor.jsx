@@ -12,7 +12,7 @@ import axios from './axiosConfig.js';
 import './MenuDeInicio.css';
 import './EditarPerfil.css';
 import { useParams } from 'react-router-dom';
-import { formatearFechaLetras, obtenerLinkPerfil } from "../componentes/Metodos.js";
+import { formatearFechaLetras } from "../componentes/Metodos.js";
 import { Suspense, lazy } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './PerfilVendedor.css';
@@ -21,7 +21,7 @@ import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 const ImagenFotoPerfil = lazy(() => import('../componentes/lazy/ImagenFotoPerfilVendedor.jsx'));
 import { profileImagePathMod } from '../componentes/variablesGenerales.js';
 import ModalSesionCerrada from './ModalSesiónCerrada.jsx';
-import { getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
+import { getLinkPerfil, getObtenerFotoPerfilGeneral } from '../funcionesDB/get.js';
 
 function PerfilDelVendedor(){
   const { username } = useParams();    
@@ -61,7 +61,7 @@ function PerfilDelVendedor(){
     const[linkPerfilPath, setlinkPerfilPath] = useState(null);
     useEffect(() => {
       console.log("Le estoy hablandoo wey");
-      obtenerLinkPerfil()
+      getLinkPerfil()
         .then(path => {
           setlinkPerfilPath(path);
         });

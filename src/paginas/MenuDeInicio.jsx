@@ -9,14 +9,12 @@ import { useState, useEffect} from 'react';
 import HeaderConBarraEnlaces from '../componentes/HeaderConBarraEnlacesFiltros.jsx';
 import { scrollTo } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
-import axios from './axiosConfig.js';
 import SliderComponent from '../componentes/Slider.jsx';
 import SliderProductosMasQueridos from '../componentes/SliderProductosMasQueridos.jsx';
 import './MenuDeInicio.css';
-import { obtenerLinkPerfil } from '../componentes/Metodos.js';
 import PaginaNoEncontrada from './PaginaNoEncontrada.jsx';
 import SliderTambienTePuedeInteresar from '../componentes/SliderTambienTePuedeInteresar.jsx';
-import { getObtenerFotoPerfilGeneral, getValidacionesTipoUsuario } from '../funcionesDB/get.js';
+import { getLinkPerfil, getObtenerFotoPerfilGeneral, getValidacionesTipoUsuario } from '../funcionesDB/get.js';
 
 const MenuDeInicio = (props) => 
 {
@@ -24,11 +22,12 @@ const MenuDeInicio = (props) =>
   const [renderizar, setRenderizar] = useState("");
   useEffect(() => {
       let tipoUsuario = getValidacionesTipoUsuario();
-      if(tipoUsuario == 1){
+      console.log("Tipo: ", tipoUsuario, tipoUsuario=="Normal");
+      if(tipoUsuario == "Normal"){
         setRenderizar('Normal')
-      } else if (tipoUsuario == 2){
+      } else if (tipoUsuario == "Mod"){
         history("/init");
-      } else if(tipoUsuario == 3){
+      } else if(tipoUsuario == ("ModSinVerificar")){
         history('/editarperfilmod')
       } else{
         setRenderizar('NoEncontrada')
@@ -38,18 +37,12 @@ const MenuDeInicio = (props) =>
     //Funcion para obtener la foto de perfil
     const [profileImagePath, setProfileImagePath] = useState(null);
     useEffect(() => {
-      getObtenerFotoPerfilGeneral()
-        .then(path => {
-          setProfileImagePath(path);
-        });
+      setProfileImagePath(getObtenerFotoPerfilGeneral());
     }, []);
 
     const[linkPerfilPath, setlinkPerfilPath] = useState(null);
     useEffect(() => {
-      obtenerLinkPerfil()
-        .then(path => {
-          setlinkPerfilPath(path);
-        });
+      setlinkPerfilPath(getObtenerFotoPerfilGeneral());
     }, []);
 
     const scrollPMQ = () => {
@@ -80,7 +73,7 @@ const MenuDeInicio = (props) =>
         event.preventDefault();
         history("publicarproducto");
       }
-      console.log("Renderizar: ", renderizar)
+
       if(renderizar== "Normal"){
         return(
             <div className='menuDeInicio'>
